@@ -21,6 +21,8 @@ before_install:
   - npm install hexo-deployer-git --save
 #hexo-theme-butterfly配置
   - npm install hexo-renderer-pug hexo-renderer-stylus 
+#hexo-generator-search搜索
+  - npm install hexo-generator-search --save
 # Start: Build Lifecycle
 install:
   - npm install
