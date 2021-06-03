@@ -6,9 +6,9 @@ sudo: required
 node_js: 
   - stable
 # 指定缓存模块，可选。缓存可加快编译速度。
-#cache:
-#  directories:
-#    - node_modules
+cache:
+  directories:
+    - node_modules
 
 # 指定博客源码分支，因人而异。hexo博客源码托管在独立repo则不用设置此项
 branches:
@@ -19,7 +19,8 @@ before_install:
   - export TZ='Asia/Shanghai'
   - npm install -g hexo-cli
   - npm install hexo-deployer-git --save
-  - npm install hexo-renderer-pug hexo-renderer-stylus
+#hexo-theme-butterfly配置
+  - npm install hexo-renderer-pug hexo-renderer-stylus 
 # Start: Build Lifecycle
 install:
   - npm install
