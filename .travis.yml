@@ -19,6 +19,7 @@ before_install:
   - export TZ='Asia/Shanghai'
   - npm install -g hexo-cli
   - npm install hexo-deployer-git --save
+  - npm install hexo-renderer-pug hexo-renderer-stylus
 # Start: Build Lifecycle
 install:
   - npm install
