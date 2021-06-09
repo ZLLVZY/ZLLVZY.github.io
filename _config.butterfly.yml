@@ -86,7 +86,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i1.hdslb.com/bfs/face/6f10ae6a0bfc5bdac3bfa1925ac4161c325c4a0f.jpg@128w_128h_1o.webp
+  img: https://i1.hdslb.com/bfs/face/6f10ae6a0bfc5bdac3bfa1925ac4161c325c4a0f.jpg
   effect: true
 
 # Disable all banner image
