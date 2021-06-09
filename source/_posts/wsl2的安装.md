@@ -4,7 +4,7 @@ date: 2021-05-18 11:08:42
 tags: wsl2
 description: wsl2的安装
 categories: Linux
-cover: https://pics6.baidu.com/feed/a8014c086e061d956d575da485d256d763d9cac2.jpeg?token=11d9515654a985a2bbe48bca1cfabc5f&s=F239716C007AB994DC0ABD180300009B
+cover: https://www.wallpaperup.com/uploads/wallpapers/2014/02/19/259727/f4056cdb600dc71619927518abfa3350.jpg
 ---
 # wsl2的安装
 [微软官方教程](https://docs.microsoft.com/en-us/windows/wsl/wsl2-install)
