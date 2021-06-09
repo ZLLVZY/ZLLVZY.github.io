@@ -15,8 +15,6 @@ cover: https://pics6.baidu.com/feed/a8014c086e061d956d575da485d256d763d9cac2.jpe
 
 2. 重启电脑 使更改生效
 
-3. 更改 wsl默认版本
+3. 更改 wsl默认版本 `wsl --set-default-version 2`
 
-wsl --set-default-version 2
-
-4. 从商店中安装发行版安装包，或者 wsl --set-version <Distro> 2 对已有发行进行版本升级
+4. 从商店中安装发行版安装包，或者 `wsl --set-version <Distro> 2` 对已有发行进行版本升级
