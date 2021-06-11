@@ -8,9 +8,9 @@
 
 menu:
     首页: / || fas fa-home
-    # Archives: /archives/ || fas fa-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
+    目录: /archives/ || fas fa-archive
+    #标签: /tags/ || fas fa-tags
+    #分类: /categories/ || fas fa-folder-open
     #清单||fas fa-list:
       #Music: /music/ || fas fa-music
       #Movie: /movies/ || fas fa-video
@@ -87,7 +87,7 @@ favicon: /img/favicon.png
 # Avatar (頭像)
 avatar:
   img: https://avatars.githubusercontent.com/u/22416337?v=4
-  effect: true
+  effect: false
 
 # Disable all banner image
 disable_top_img: false
