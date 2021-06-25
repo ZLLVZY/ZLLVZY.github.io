@@ -43,8 +43,8 @@ copy:
 #   icon: link || the description
 social:
    fab fa-github: https://github.com/ZLLVZY/ZLLVZY.github.io || Github
-   fas fa-photo-video: https://space.bilibili.com/327243169?from=search&seid=2634875317630506120 || bilibili
-
+   fab fa-youtube: https://space.bilibili.com/327243169?from=search&seid=2634875317630506120 || bilibili
+   fab fa-twitch: https://www.douyu.com/8222309 || LiveStream
 # search (搜索)
 # --------------------------------------
 
