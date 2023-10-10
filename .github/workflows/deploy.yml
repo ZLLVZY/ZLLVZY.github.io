@@ -37,13 +37,19 @@ jobs:
       run: |
         hexo clean
         hexo g
-    # 部署到腾讯云    
+    
     - name: Deploy to Github Pages
-      
-      uses: y4code/hexo-deploy-action@master
       env:
-        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_REPOSITORY: ZLLVZY/ZLLVZY.github.io.git # The repository the action should deploy to.
-        BRANCH: main  # The branch the action should deploy to.
-        PUBLISH_DIR: ./public # The folder the action should deploy.
+        GIT_NAME: ${{ secrets.GIT_NAME }}
+        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+        REPO: github.com/ZLLVZY/ZLLVZY.github.io
+        GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: |
+        cd ./public && git config --global init.defaultBranch main && git init && git add .
+        git config --global user.name $GIT_NAME
+        git config --global user.email $GIT_EMAIL
+        git commit -m "Site deployed by GitHub Actions"
+        git push --force --quiet "https://$GH_TOKEN@$REPO" main:main
+       
+     
 
