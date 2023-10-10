@@ -10,7 +10,7 @@ copyright_author: Tensor
 copyright_author_href: https://github.com/ZLLVZY
 copyright_url: https://zllvzy.github.io/2021/06/25/%E4%BD%BF%E7%94%A8autogluon%EF%BC%8C%E8%AE%AD%E7%BB%83%E5%9B%BE%E7%89%87%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/
 copyright_info: 此文章版权归Tensor所有，如有转载，请注明来自原作者
-cover: https://auto.gluon.ai/stable/_static/AutogluonLogo.png
+cover: https://auto.gluon.ai/stable/_static/autogluon.png 
 
 ---
 # 使用AutoGluon，训练图片分类模型

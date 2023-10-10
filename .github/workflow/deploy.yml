@@ -1,0 +1,49 @@
+name: Hexo Action 
+on:
+  push:
+    branches:
+
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+
+    - name: 1. git checkout...
+
+      uses: actions/checkout@v1
+
+    - name: 2. setup nodejs...
+
+      uses: actions/setup-node@v1
+      
+      with:
+        node-version: '16.x'
+
+    - name: 3. install hexo...
+
+      run: |
+        npm install hexo-cli -g
+        npm install hexo-deployer-git --save
+        npm install hexo-renderer-pug hexo-renderer-stylus
+        npm install hexo-generator-search --save 
+        npm install
+
+    - name: 4. hexo generate public files...
+
+      run: |
+        hexo clean
+        hexo g
+    # 部署到腾讯云    
+    - name: Deploy to Github Pages
+      
+      uses: y4code/hexo-deploy-action@master
+      env:
+        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        PUBLISH_REPOSITORY: ZLLVZY/ZLLVZY.github.io.git # The repository the action should deploy to.
+        BRANCH: main  # The branch the action should deploy to.
+        PUBLISH_DIR: ./public # The folder the action should deploy.
+
